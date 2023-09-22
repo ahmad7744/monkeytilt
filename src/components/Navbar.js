@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="w-full max-w-[1536px] mx-auto flex items-center justify-between  z-50 ">
         <div className="w-full  max-w-[607px] z-50">
           <ul className="space-x-8 lg:flex text-white items-center text-base font-medium leading-7 ">
-            <li className="hover:text-[#FFE500] hover:border-b border-white cursor-pointer ">
+            <li className="hover:text-[#FFE500] border-b-2 border-b-transparent transition-all duration-500 hover:border-[#FFE500] cursor-pointer ">
               <a href="/">CASINO</a>
             </li>
             <li className="hover:text-[#FFE500]  cursor-pointer border-b-2 border-b-transparent transition-all duration-500 hover:border-[#FFE500] uppercase">
