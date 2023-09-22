@@ -1,33 +1,55 @@
 body {
   margin: 0;
-  font-family: 'AvenirNext', sans-serif;
-
+  font-family: "AvenirNext", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
-  font-family: 'AvenirNext';
-  src: local('AvenirNext'),
-       url('./fonts/AvenirNextLTPro-Bold.otf') format('otf'),
-       url('./fonts/AvenirNextLTPro-It.otf') format('otf'),
-       url('./fonts/AvenirNextLTPro-Regular.otf') format('otf')
+  font-family: "AvenirNext";
+  src: local("AvenirNext"),
+    url("./fonts/AvenirNextLTPro-Bold.otf") format("otf"),
+    url("./fonts/AvenirNextLTPro-It.otf") format("otf"),
+    url("./fonts/AvenirNextLTPro-Regular.otf") format("otf");
 }
 
-h1, h2 {
-font-family: 'Mulish', sans-serif;
-
+h1,
+h2 {
+  font-family: "Mulish", sans-serif;
 }
 
+.custom-bg {
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    93deg,
+    rgba(165, 165, 165, 0.2) 0%,
+    rgba(24, 24, 27, 0.1) 100%
+  );
+  backdrop-filter: blur(12px);
+}
 
+.bg-ga {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(64px);
+}
 
+.nav-bg {
+  border-bottom: 1px solid rgba(39, 39, 42, 0.06);
+  border-top: 1px solid rgba(39, 39, 42, 0.06);
+  opacity: 0.95;
+  background: var(--Zinc-950, #09090b);
+}
+
+.body-bg{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(27, 27, 27, 0.46) 80.08%);
+}

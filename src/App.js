@@ -1,26 +1,31 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import CountUp from "react-countup";
 
 function App() {
   return (
     <div className="w-full h-full">
-      <Navbar />
       {/* Hero Section */}
+   
       <div className="w-full h-full  bg-gradient-to-t from-black to-zinc-900 pt-12  ">
-        <div className="w-full  max-w-[1536px]  mx-auto">
-          <div className="flex justify-between items-center w-full ">
-            <div className="flex flex-col">
-              <h2 className="text-white text-lg uppercase leading-7 tracking-[9px] font-bold">
+        <div className="relative " >
+        <img
+        className="absolute -top-32 left-0 z-0 "
+        src="/images/Untitled_Artwork.png"
+        alt=""
+      />
+      <div className="w-full  max-w-[1536px]   mx-auto">
+          <div className="flex justify-between   items-center w-full ">
+            <div className="flex  z-10 flex-col">
+              <h2 className="text-white text-lg uppercase leading-7 tracking-[9px] font-extrabold">
                 WELCOME TO CASINO LOBBY
               </h2>
-              <p className="text-white text-7xl uppercase leading-[72px] tracking-widest  ">
+              <p className="text-white text-7xl font-['Avenir Next']  uppercase leading-[72px] tracking-widest  ">
                 SIDHARTH SANKHE
               </p>
             </div>
 
             <div className=" flex flex-col gap-4">
-              <div className="px-4 py-2 max-w-[282px] bg-gradient-to-r from-neutral-400 to-zinc-900 rounded-sm border border-solid border-white border-opacity-10 backdrop-blur-xl items-center justify-between  gap-4 flex">
+              <div className="px-4 py-2 max-w-[282px]  custom-bg  items-center justify-between  gap-4 flex">
                 <p className="text-white text-sm font-normal font-['Mulish'] uppercase leading-tight tracking-wider">
                   Rank
                 </p>
@@ -28,7 +33,7 @@ function App() {
                   <CountUp start={0} end={269} duration={5} />
                 </p>
               </div>
-              <div className="px-4 py-2 max-w-[282px] bg-gradient-to-r from-neutral-400 to-zinc-900 rounded-sm border border-solid border-white border-opacity-10 backdrop-blur-xl items-center justify-between  gap-4 flex">
+              <div className="px-4 py-2 max-w-[282px] custom-bg items-center justify-between  gap-4 flex">
                 <p className="text-white text-sm font-normal font-['Mulish'] uppercase leading-tight tracking-wider">
                   Total Gambled
                 </p>
@@ -36,7 +41,7 @@ function App() {
                   $<CountUp start={0} end={1050} duration={4} />
                 </p>
               </div>
-              <div className="px-4 py-2 max-w-[282px] bg-gradient-to-r from-neutral-400 to-zinc-900 rounded-sm border border-solid border-white border-opacity-10 backdrop-blur-xl items-center justify-between  gap-4 flex">
+              <div className="px-4 py-2 max-w-[282px] custom-bg items-center justify-between  gap-4 flex">
                 <p className="text-white text-sm font-normal font-['Mulish'] uppercase leading-tight tracking-wider">
                   Leaderboard Points
                 </p>
@@ -44,7 +49,7 @@ function App() {
                   <CountUp start={0} end={312} duration={4} />
                 </p>
               </div>
-              <div className="px-4 py-2  max-w-[282px] bg-gradient-to-r from-neutral-400 to-zinc-900 rounded-sm border border-solid border-white border-opacity-10 backdrop-blur-xl items-center  gap-4 flex flex-col">
+              <div className="px-4 py-2  max-w-[282px] custom-bg items-center  gap-4 flex flex-col">
                 <div className="flex w-full max-w-[282px] justify-between">
                   <p className="text-white text-sm font-normal font-['Mulish'] uppercase leading-tight tracking-wider">
                     Progress
@@ -58,9 +63,13 @@ function App() {
             </div>
           </div>
         </div>
+
+        </div>
+      
+        
         {/* slide bar main div */}
         <div className="w-full flex flex-col gap-28 pt-12">
-          <div className="px-24 py-5 bg-white bg-opacity-5  backdrop-blur-[128px] justify-center items-center gap-12 flex">
+          <div className="px-24 py-5 bg-ga justify-center items-center gap-12 flex">
             <p className="text-center text-zinc-400 text-sm font-medium font-['Avenir Next'] uppercase leading-tight cursor-pointer">
               FAVORITES
             </p>
@@ -299,8 +308,8 @@ function App() {
         <div className="w-full max-w-[1536px] flex justify-between mx-auto py-16">
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">CASINO</a>
+              <li className="  text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>CASINO</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
                 <a href="/Poker">Lobby</a>
@@ -318,11 +327,11 @@ function App() {
           </div>
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">Poker</a>
+              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>Poker</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">Lobby</a>
+                <a href="/Lobby">Lobby</a>
               </li>
               <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
                 <a href="/SPORTSBOOK">Tournaments</a>
@@ -334,8 +343,8 @@ function App() {
           </div>
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">Sports</a>
+              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>Sports</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
                 <a href="/Poker">Lobby</a>
@@ -348,8 +357,8 @@ function App() {
           </div>
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">Crypto</a>
+              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>Crypto</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
                 <a href="/Poker">(Coming soon)</a>
@@ -359,8 +368,8 @@ function App() {
           </div>
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">Support</a>
+              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>Support</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
                 <a href="/Poker">Fairness</a>
@@ -381,8 +390,8 @@ function App() {
           </div>
           <div className="flex flex-col">
             <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="hover:text-[#FFE500]  cursor-pointer text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <a href="/">About Us</a>
+              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
+                <h>About Us</h>
               </li>
               <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
                 <a href="/Poker">Privacy Policy</a>
