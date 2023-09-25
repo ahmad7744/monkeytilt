@@ -1,5 +1,6 @@
 import "./App.css";
 import CountUp from "react-countup";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <div className="w-full h-full  bg-gradient-to-t from-black to-zinc-900 pt-12  ">
         <div className="relative " >
         <img
-        className="absolute -top-32 left-0 z-0 "
+        className="absolute -top-16 md:-top-32 left-0 z-0 "
         src="/images/Untitled_Artwork.png"
         alt=""
       />
@@ -111,7 +112,7 @@ function App() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row px-5 gap-4 md:gap-0 max-w-[1536px] w-full justify-between mx-auto ">
-            <div className="flex flex-col gap-2 md:gap-6 ">
+            <div className="flex flex-col gap-2 md:gap-6 z- ">
               <p className=" text-white text-[32px] font-normal font-['Mulish'] uppercase leading-10">
                 YOUR FAVORITES
               </p>
@@ -305,109 +306,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[1536px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5 justify-center px-5 md:gap-0 md:justify-between mx-auto py-16">
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className="  text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>CASINO</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">Lobby</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/SPORTSBOOK">Games</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/CRYPTO">VIP</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/celebrities">Promotions</a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>Poker</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Lobby">Lobby</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/SPORTSBOOK">Tournaments</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/CRYPTO">Cash Games</a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>Sports</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">Lobby</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/SPORTSBOOK">Live</a>
-              </li>
-              
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>Crypto</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">(Coming soon)</a>
-              </li>
-             
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>Support</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">Fairness</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/SPORTSBOOK">Affiliate</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/CRYPTO">Responsible Gambling</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/celebrities">Self Exclusion</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/celebrities">Live Support</a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul className="flex flex-col leading-7 gap-5 ">
-              <li className=" text-white text-lg font-semibold font-['Mulish'] uppercase leading-7 tracking-widest ">
-                <h>About Us</h>
-              </li>
-              <li className="hover:text-[#FFE500] text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase">
-                <a href="/Poker">Privacy Policy</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/SPORTSBOOK">Licenses</a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/CRYPTO">AML Policy </a>
-              </li>
-              <li className="hover:text-[#FFE500] cursor-pointer text-zinc-400 text-sm font-normal font-['Avenir Next'] leading-tight  cursor-pointer uppercase ">
-                <a href="/celebrities">Terms of Service</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+       <Footer/>
       </div>
     </div>
   );
