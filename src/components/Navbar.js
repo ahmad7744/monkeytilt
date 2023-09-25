@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className=" bg-black z-50  ">
         <div className="w-full max-w-[1536px]  mx-auto md:flex md:items-center md:justify-between  z-50 ">
           <div className="z-50">
-            <ul className="  lg:space-x-10 lg:flex w-full  max-w-[607px] lg:justify-between hidden  text-white items-center text-base font-medium leading-7 ">
+            <ul className="  lg:space-x-10 lg:flex w-full  max-w-[607px] lg:justify-between hidden   text-white items-center text-base font-medium leading-7 ">
               <li className="hover:text-[#FFE500] border-b-2 border-b-transparent transition-all duration-500 hover:border-[#FFE500] cursor-pointer ">
                 <a href="/">CASINO</a>
               </li>
@@ -68,11 +68,19 @@ const Navbar = () => {
                   className="HAMBURGER-ICON space-y-2"
                   onClick={() => setIsNavOpen((prev) => !prev)}
                 >
-                  <img
-                    className="cursor-pointer"
-                    src="/images/Frame-3.png"
-                    alt=""
-                  />
+                  <svg
+                    className="animate-pulse transition-all duration-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
                 <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                   <div
