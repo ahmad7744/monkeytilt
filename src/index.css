@@ -71,3 +71,51 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
 }
+
+
+
+.search-bar {
+align-items: center;
+  display: flex;
+}
+
+.search-icon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+}
+
+.search-icon.active {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-100%, 50%);
+}
+
+.search-input {
+  width: 150px;
+  padding: 2px;
+  border: 1px rgb(214, 214, 214);
+  transition: all 3s ease;
+  opacity: 1;
+  
+}
+
+/* .search-input.active { */
+  /* width: 200px; /* Adjust the width as needed */
+  /* padding: 8px; Add padding as needed */
+  /* border: 1px solid #ccc; /* Add border styles as needed */
+  /* opacity: 1; */ */ */
+/* } */
+
+search-icon-image {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  /* Add any other styling you want */
+}
+
+/* Example CSS for active custom search icon (when input is open) */
+.search-icon-image.active {
+  transform: translateX(-20px); /* Move the icon to the left when active */
+  /* Add any other styling for the active state */
+}

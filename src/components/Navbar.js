@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -53,11 +54,7 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex items-center gap-4 md:gap-6 w-full md:w-fit ">
-              <img
-                className="cursor-pointer"
-                src="/images/search-2-line.png"
-                alt=""
-              />
+              <SearchBar/>
               <img
                 className="cursor-pointer"
                 src="/images/user-6-line.png"
