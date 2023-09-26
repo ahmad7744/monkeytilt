@@ -100,22 +100,3 @@ align-items: center;
   opacity: 1;
   
 }
-
-/* .search-input.active { */
-  /* width: 200px; /* Adjust the width as needed */
-  /* padding: 8px; Add padding as needed */
-  /* border: 1px solid #ccc; /* Add border styles as needed */
-  /* opacity: 1; */ */ */
-/* } */
-
-search-icon-image {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  /* Add any other styling you want */
-}
-
-/* Example CSS for active custom search icon (when input is open) */
-.search-icon-image.active {
-  transform: translateX(-20px); /* Move the icon to the left when active */
-  /* Add any other styling for the active state */
-}
