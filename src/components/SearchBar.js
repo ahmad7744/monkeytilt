@@ -90,7 +90,6 @@ function SearchBar() {
           type="text"
           placeholder="Search..."
           className="search-input rounded bg-slate-200 text-[14px]"
-          // You can add additional input properties here
         />
       )}
     </div>

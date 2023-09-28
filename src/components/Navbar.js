@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <>
-      <div className=" bg-black z-50  ">
+      <div className=" bg-black z-50 sticky top-0 ">
         <div className="w-full max-w-[1536px]  mx-auto md:flex md:items-center md:justify-between  z-50 ">
           <div className="z-50">
             <ul className="  lg:space-x-10 lg:flex w-full  max-w-[607px] lg:justify-between hidden   text-white items-center text-base font-medium leading-7 ">
