@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <>
-      <div className=" bg-black z-50 sticky top-0 ">
+      <div className=" bg-black z-50 sticky top-0  ">
         <div className="w-full max-w-[1536px]  mx-auto md:flex md:items-center md:justify-between  z-50 ">
           <div className="z-50">
             <ul className="  lg:space-x-10 lg:flex w-full  max-w-[607px] lg:justify-between hidden   text-white items-center text-base font-medium leading-7 ">
@@ -32,12 +32,12 @@ const Navbar = () => {
           </div>
 
           <div></div>
-          <div className="flex flex-col items-center cursor-pointer md:flex-row  ">
+          <div className="flex flex-col items-center cursor-pointer md:flex-row">
             <a href="/">
               <img src="/images/MonkeyTiltLogoWhite.png" alt="logo" />
             </a>
           </div>
-          <div className=" md:max-w-[580px]  pb-2 flex justify-between w-full  px-5 gap-4 md:gap-6  ">
+          <div className=" md:max-w-[580px]  pb-2 flex justify-between w-full  px-5 gap-4 md:gap-6">
             <div className=" px-5 py-1 md:px-2 md:py-1 bg-white bg-opacity-5 rounded-[32px] backdrop-blur-[128px] justify-center items-center gap-1 inline-flex">
               <p className="text-neutral-400 text-[10px] md:text-[14px] font-medium leading-tight">
                 VIP Status:
@@ -54,7 +54,7 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex items-center gap-4 md:gap-6 w-full md:w-fit ">
-              <SearchBar/>
+              <SearchBar />
               <img
                 className="cursor-pointer"
                 src="/images/user-6-line.png"
